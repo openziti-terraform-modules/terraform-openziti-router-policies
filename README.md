@@ -1,2 +1,3 @@
-# template-repo
-Various materials related to or pertaining to the branding of OpenZiti
+# Terraform Module for Managing a Simple Set of OpenZiti Router Policies
+
+Every OpenZiti Network needs at least one Edge Router Policy (ERP) and one Service Edge Router Policy (SERP). This module creates a simple set of policies to get started with OpenZiti. These have a default router role that you may assign to any publicly reachable routers. You must have at least one router that matches these policies.
