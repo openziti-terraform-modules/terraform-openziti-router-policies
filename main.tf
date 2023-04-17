@@ -24,7 +24,7 @@ resource "restapi_object" "service_edge_router_policy" {
     data        = jsonencode({
         name = var.name
         semantic = var.service_role_semantic
-        edgeRouterRoles = var.router_roles
+        edgeRouterRoles = var.service_router_roles
         serviceRoles = var.service_roles
     })
 }

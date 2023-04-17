@@ -1,5 +1,5 @@
 variable "router_roles" {
-    description = "the edge router roles that represents public routers that should advertise availability to edge clients for edge connections"
+    description = "the edge router roles that represent public routers that should advertise availability to edge client identities for edge connections"
     type = list
     default = ["#public-routers"]
 }
@@ -9,6 +9,11 @@ variable "identity_roles" {
     default = ["#all"]
 }
 
+variable "service_router_roles" {
+    description = "limit the routers by which service_roles can be used; if not #all you must provide a separate service router policy for each service"
+    type = list
+    default = ["#all"]
+}
 variable "service_roles" {
     description = "the service roles that should use this public router policy"
     default = ["#all"]
